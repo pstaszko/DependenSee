@@ -1,25 +1,20 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>DependenSee</ToolCommandName>
     <PackageOutputPath>./bin/nupkg</PackageOutputPath>
     <Version>2.2.0</Version>
   </PropertyGroup>
-
   <ItemGroup>
     <Content Include="HtmlResultTemplate.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="PowerArgs" Version="3.6.0" />
   </ItemGroup>
-
   <PropertyGroup>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Authors>Madushan</Authors>
@@ -28,7 +23,6 @@
     <RepositoryUrl>https://github.com/madushans/DependenSee</RepositoryUrl>
     <PackageProjectUrl>https://github.com/madushans/DependenSee</PackageProjectUrl>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
